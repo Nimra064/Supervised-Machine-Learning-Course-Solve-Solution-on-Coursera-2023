@@ -1,0 +1,94 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\usepackage{amsfonts} 
+\def\sone{{\textbf{1}}}
+
+\usepackage{graphicx}
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+}
+
+\title{\textbf{Assignment 2}}
+\author{\textbf{ {Deadline: Wednesday, 14$^{th}$ of June, 23:59}}}
+
+\date{\textbf{ Upload your solutions as a zip archive at: \url{https://tinyurl.com/AML-2023-ASSIGNMENT2}
+}}
+
+\begin{document}
+
+\maketitle
+
+1. \textbf{(1.25 points)} Consider $\mathcal{H}$ the following hypothesis class :
+$$\mathcal{H} = \{ h_{a} : \mathbb{R} \rightarrow \{0,1\}\ | \ a > 0, a\in \mathbb{R}, \text{\ where \ } 
+h_{a}(x)= \mathbf{1}_{[-a,a]}(x) = \left\{
+\begin{array}{ll}
+      1, & x \in [-a,a]\\
+      0, & x \not\in [-a,a] \\
+\end{array} \}
+\right. 
+$$
+\begin{itemize}
+    \item[a.] Compute the shattering coefficient $\tau_H(m)$ of the growth function for $m \geq 0$ for hypothesis class $\mathcal{H}$. \textbf{(1 point)}
+    \item[b.] Compare your result from the previous point  with the general upper bound given by the Sauer lemma. Are they equal or different? \textbf{(0.25 points)}
+\end{itemize}
+
+2. \textbf{(1.5 points)} Consider de concept class $C_a$ formed by the union of two closed intervals $[a,a+1] \cup [a+2,a+4]$, where $a \in \mathbb{R}$. Give an efficient ERM algorithm for learning the concept class $C_a$ and compute its complexity for each of the following cases:
+
+\begin{itemize}
+    \item[a.] realizable case. \textbf{(1 point)}
+    \item[b.] agnostic case. \textbf{(0.5 point)}
+\end{itemize}
+
+3. \textbf{(1.25 points)} Consider a modified version of the AdaBoost algorithm that runs for exactly three rounds as follows:
+
+\begin{itemize}
+    \item the first two rounds run exactly as in AdaBoost (at round 1 we obtain distribution $\textbf{D}^{(1)}$, weak classifier $h_1$ with error $\epsilon_1$; at round 2 we obtain distribution $\textbf{D}^{(2)}$, weak classifier $h_2$ with error $\epsilon_2$).
+    \item in the third round we compute for each $i = 1, 2, \dots, m$:
+    $$\textbf{D}^{(3)}(i) = \left\{
+\begin{array}{ll}
+    \frac{D^{(1)}(i)}{Z}, & \text{if} \ h_1(x_i) \neq h_2(x_i)\\
+    0, & \text{otherwise} \\
+\end{array} 
+\right.$$
+
+where Z is a normalization factor such that $\textbf{D}^{(3)}$ is a probability distribution.
+
+    \item obtain weak classifier $h_3$ with error $\epsilon_3$.
+    \item output the final classifier $h_{final}(x)=sign(h_1(x)+h_2(x)+h_3(x))$.
+\end{itemize}
+
+Assume that at each round $t = 1, 2, 3$ the weak learner returns a weak classifier $h_t$ for which the error $\epsilon_t$ satisfies $\epsilon_t \leq \frac{1}{2} - \gamma_t, \gamma_t > 0$. 
+\begin{enumerate}
+    \item[a.] What is the probability that the classifier $h_1$ (selected at round 1) will be selected again at round 2? Justify your answer. \textbf{(0.25 points)}
+    \item[b.] Consider $\gamma = min\{\gamma_1, \gamma_2, \gamma_3\}$. Show that the training error of the final classifier $h_{final}$ is at most $\frac{1}{2} - \frac{3}{2}\gamma + 2\gamma^3$ and show that this is strictly smaller than $\frac{1}{2} - \gamma$. \textbf{(1 point)}
+\end{enumerate}
+
+4. \textbf{(1 point)} Consider $H_{2DNF}^{d}$ the class of 2-term disjunctive normal form formulae consisting of hypothesis of the form $h : \{0,1\}^{d} \rightarrow \{0,1\}$, 
+
+$$h(x) = A_1(x) \lor A_2 (x)$$
+
+where $A_i(x)$ is a Boolean conjunction of literals $H_{conj}^{d}$.
+
+It is known that the class $H_{2DNF}^{d}$ is not efficient properly learnable but can be learned improperly considering the class $H_{2CNF}^{d}$. Give a $\gamma$-weak-learner algorithm for learning the class $H_{2DNF}^{d}$ which is not a strong PAC learning algorithm for $H_{2DNF}^{d}$ (like the one considering $H_{2CNF}^{d}$). Prove that this algorithm is a $\gamma$-weak-learner algorithm for $H_{2DNF}^{d}$.
+
+\vspace{2mm}
+
+\textit{Hint: Find an algorithm that returns $h(x)=0$ or the disjunction of 2 literals.}
+
+\vspace{5mm}
+
+\textbf{Ex-oficio: 0.5 points.}
+
+\end{document}
+
