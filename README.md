@@ -19,25 +19,6 @@ It is part of the **Machine Learning Specialisation ** by Stanford University & 
 
 ---
 
-## 📂 Repository Structure
-
-
-├── Week1/
-├── Week2/
-├── Week3/
-├── Week4/
-├── notebooks/
-├── images/
-└── README.md
-
-
-Each folder contains:
-- 📓 Jupyter Notebooks (solutions)
-- 🧠 Concepts explanation
-- 🧪 Lab exercises
-
----
-
 ## 🛠️ Technologies Used
 
 - Python 🐍
@@ -69,9 +50,9 @@ jupyter notebook
 ```bash
 By completing this repository, I gained:
 
-1.Strong understanding of supervised learning
-2.Hands-on experience with regression & classification
-3.Knowledge of model evaluation and tuning
-4.Practical implementation using Python libraries
+1. Strong understanding of supervised learning
+2. Hands-on experience with regression & classification
+3. Knowledge of model evaluation and tuning
+4. Practical implementation using Python libraries
 ```
 
