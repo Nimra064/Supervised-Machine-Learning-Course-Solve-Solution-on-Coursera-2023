@@ -51,17 +51,19 @@ Each folder contains:
 
 ## 🚀 How to Run the Project
 
-1. Clone the repository:
 ```bash
+# 1. Clone the repository
 git clone https://github.com/Nimra064/Supervised-Machine-Learning-Course-Solve-Solution-on-Coursera-2023.git
 
-2.Navigate to the project:
+# 2. Navigate to the project directory
 cd Supervised-Machine-Learning-Course-Solve-Solution-on-Coursera-2023
-3.Install dependencies:
-  pip install -r requirements.txt
-4. Run Jupyter Notebook:
-      jupyter notebook
----
+
+# 3. Install required dependencies
+pip install -r requirements.txt
+
+# 4. Launch Jupyter Notebook
+jupyter notebook
+```
 
 🎯 Learning Outcomes
 
@@ -71,3 +73,6 @@ Strong understanding of supervised learning
 Hands-on experience with regression & classification
 Knowledge of model evaluation and tuning
 Practical implementation using Python libraries
+
+
+
