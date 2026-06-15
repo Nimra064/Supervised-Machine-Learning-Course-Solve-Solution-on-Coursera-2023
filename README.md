@@ -66,13 +66,12 @@ jupyter notebook
 ```
 
 🎯 Learning Outcomes
-
+```bash
 By completing this repository, I gained:
 
 Strong understanding of supervised learning
 Hands-on experience with regression & classification
 Knowledge of model evaluation and tuning
 Practical implementation using Python libraries
-
-
+```
 
