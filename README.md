@@ -15,7 +15,7 @@ This course focuses on building foundational machine learning models, including:
 - Feature Engineering
 - Gradient Descent Optimization
 
-It is part of the **Machine Learning Specialisation ** by Stanford University & DeepLearning.AI.
+It is part of the **Machine Learning Specialisation** by Stanford University & DeepLearning.AI.
 
 ---
 
