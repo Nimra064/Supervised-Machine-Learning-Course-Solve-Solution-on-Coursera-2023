@@ -53,13 +53,16 @@ Each folder contains:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Nimra064/Supervised-Machine-Learning-Course-Solve-Solution-on-Coursera-2023.git ```
-Navigate to the project:
+git clone https://github.com/Nimra064/Supervised-Machine-Learning-Course-Solve-Solution-on-Coursera-2023.git
+
+2.Navigate to the project:
 cd Supervised-Machine-Learning-Course-Solve-Solution-on-Coursera-2023
-Install dependencies:
-pip install -r requirements.txt
-Run Jupyter Notebook:
-jupyter notebook
+3.Install dependencies:
+  pip install -r requirements.txt
+4. Run Jupyter Notebook:
+      jupyter notebook
+
+
 🎯 Learning Outcomes
 
 By completing this repository, I gained:
