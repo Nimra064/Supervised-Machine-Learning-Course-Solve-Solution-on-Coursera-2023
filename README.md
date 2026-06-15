@@ -53,7 +53,7 @@ Each folder contains:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Nimra064/Supervised-Machine-Learning-Course-Solve-Solution-on-Coursera-2023.git
+git clone https://github.com/Nimra064/Supervised-Machine-Learning-Course-Solve-Solution-on-Coursera-2023.git ```
 Navigate to the project:
 cd Supervised-Machine-Learning-Course-Solve-Solution-on-Coursera-2023
 Install dependencies:
