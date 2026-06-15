@@ -6,7 +6,7 @@ This repository contains my solutions and notes for the **Supervised Machine Lea
 
 ## 📌 About the Course
 
-This course focuses on building foundational machine learning models including:
+This course focuses on building foundational machine learning models, including:
 
 - Linear Regression
 - Logistic Regression
@@ -15,7 +15,7 @@ This course focuses on building foundational machine learning models including:
 - Feature Engineering
 - Gradient Descent Optimization
 
-It is part of the **Machine Learning Specialization** by Stanford University & DeepLearning.AI.
+It is part of the **Machine Learning Specialisation ** by Stanford University & DeepLearning.AI.
 
 ---
 
@@ -69,9 +69,9 @@ jupyter notebook
 ```bash
 By completing this repository, I gained:
 
-Strong understanding of supervised learning
-Hands-on experience with regression & classification
-Knowledge of model evaluation and tuning
-Practical implementation using Python libraries
+1.Strong understanding of supervised learning
+2.Hands-on experience with regression & classification
+3.Knowledge of model evaluation and tuning
+4.Practical implementation using Python libraries
 ```
 
