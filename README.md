@@ -61,7 +61,7 @@ cd Supervised-Machine-Learning-Course-Solve-Solution-on-Coursera-2023
   pip install -r requirements.txt
 4. Run Jupyter Notebook:
       jupyter notebook
-
+---
 
 🎯 Learning Outcomes
 
